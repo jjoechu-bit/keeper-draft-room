@@ -1,12 +1,12 @@
 # Keeper Draft Room
 
-Keeper Draft Room is a private, read-only fantasy football analysis dashboard for a personal 12-team Yahoo keeper league.
+Keeper Draft Room is a private, read-only fantasy football analysis dashboard for two personal 12-team Yahoo leagues: one keeper league and one redraft league.
 
-The project is designed to help one league manager understand roster construction, player availability, waiver options, trades, matchups, and keeper decisions. It combines Yahoo league data with independently sourced fantasy rankings and projections to produce explainable recommendations.
+The project is designed to help one league manager understand roster construction, player availability, waiver options, trades, and matchups across both leagues. The keeper-league profile also supports keeper-cost and future-value analysis. It combines Yahoo league data with independently sourced fantasy rankings and projections to produce explainable recommendations tailored to each league's scoring and roster settings.
 
 ## Intended use
 
-The application is limited to one user and one primary Yahoo Fantasy Football league. Yahoo Fantasy Sports API access will be used to retrieve:
+The application is limited to one user and two personal Yahoo Fantasy Football leagues. It is not a public or multi-user service. Yahoo Fantasy Sports API access will be used to retrieve:
 
 - The authenticated user's leagues and teams
 - League settings and scoring rules
@@ -34,11 +34,11 @@ All roster moves and other league actions will continue to be completed by the u
 
 ## Privacy and security
 
-OAuth credentials and authorization tokens are stored outside the source repository. No Yahoo password is collected or stored. League data remains private and is used only for the authenticated user's personal analysis.
+OAuth credentials and authorization tokens are stored outside the source repository. No Yahoo password is collected or stored. League data remains private and is used only for the authenticated user's personal analysis of the two leagues.
 
 ## Project status
 
-The local Streamlit prototype is functional using manually entered draft data. Yahoo Fantasy Sports API integration is the next planned feature and will replace manual roster and player-availability updates with authorized, read-only data retrieval.
+The local Streamlit prototype is functional and has separate profiles for the keeper and redraft leagues. Yahoo Fantasy Sports API integration is the next planned feature and will replace manual roster and player-availability updates with authorized, read-only data retrieval for both profiles.
 
 ## Technology
 
